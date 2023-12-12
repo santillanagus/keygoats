@@ -5,12 +5,12 @@ body {
     font-family: 'Roboto Mono', monospace;
     margin: 0%;
     padding: 0%;
-    border: 0%;
 }
 
 /** NavBar **/
 .logoHome {
-    max-height: 55px;
+    max-height: 65px;
+    padding-left: 80px;
 }
 
 .navegation {
@@ -19,15 +19,21 @@ body {
 }
 
 header {
-    display: flex;
-    position: fixed;
-    align-items: center;
-    justify-content: space-around;
-    background-color: black;
-    width: 100%;
-    height: 80px;
-    top: 0%;
-    left: 0%;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-item {
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 18px;
+}
+
+.navbar-nav {
+    padding-right: 80px;
 }
 
 .ulItems {
@@ -50,6 +56,7 @@ header {
     background-image: url(../IMG/portada-index.png);
     background-repeat: no-repeat;
     background-position: center center;
+    font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
 .welcomeText {
@@ -84,6 +91,7 @@ header {
     color: white;
     margin: 0;
     padding-bottom: 25px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
 .sectionFlex {
@@ -104,6 +112,7 @@ header {
     flex-direction: column;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
 #esportsImg {
@@ -123,6 +132,7 @@ header {
 .sectionText {
     min-width: 30vh;
     max-width: 36vh;
+    padding-top: 18px;
 }
 
 .sectionButton {
@@ -138,12 +148,21 @@ header {
 
 /** Newsletter **/
 
+.newsText1 {
+    font-size: 28px;
+}
+
+.newsText2 {
+    font-size: 28px;
+}
 .newsletter {
     background-color: #000000;
     color: white;
     display: flex;
     justify-content: space-around;
-    padding-top: 20px;
+    padding-top: 60px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 15px;
 }
 
 .leftNewsletter {
@@ -197,6 +216,8 @@ header {
     color: white;
     margin: 0;
     padding-top: 45px;
+    margin-bottom: 0;
+    font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
 .socialNetworks {
@@ -218,6 +239,13 @@ header {
     background-position: center center;
     height: 350px;
     max-height: 350px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 12px;
+    padding-top: 0;
+}
+
+.kgAllRights {
+    font-size: 18px;
 }
 
 .footer section {
@@ -225,10 +253,14 @@ header {
     color: white;
     justify-content: space-around;
     padding-top: 100px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 14px;
 }
 
 .kgFooter {
     max-width: 100px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 12px;
 }
 
 .termsAndCond {
@@ -242,6 +274,7 @@ header {
     display: flex;
     text-align: center;
     justify-content: center;
+    font-size: 14px;
 }
 
 .buttonGoToStart {
@@ -276,6 +309,34 @@ header {
     .welcomeText {
         width: 60vh;
         font-size: 20px;
+    }
+    
+    .newsletter {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .newsText2 {
+        font-size: 18px;
+    }
+
+    .emailNewsletter {
+        width: 380px;
+    }
+    .rightNewsletter {
+        margin: 0;
+    }
+    
+    .socialNetworks {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .logoHome {
+        padding-left: 0px;
     }
 }
 
