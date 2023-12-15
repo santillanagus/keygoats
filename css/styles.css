@@ -572,7 +572,6 @@ header {
     }
 
     #mainBack {
-        background: url(./imggit/store-photo.png);
         background-repeat:initial;
         background-position: center start;
         text-align: center;
