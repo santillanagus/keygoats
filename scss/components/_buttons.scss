@@ -1,0 +1,32 @@
+.buttonPortada {
+    background-color: #070709;
+    border-radius: 10px;
+    min-width: 170px;
+    min-height: 40px;
+    font-size: 18px;
+    color: white;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+}
+
+.buttonPosition {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+
+    .buttonGoToStart {
+        background-color: white;
+        min-height: 40px;
+        min-width: 110px;
+        border-radius: 10px;
+        box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+
+        .goToStart {
+            color: black;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            font-size: 14px;
+        }
+    }
+}

@@ -1,0 +1,280 @@
+// BASE
+@import "base/reset";
+@import "base/typography";
+
+// COMPONENTS
+@import "components/buttons";
+
+// LAYOUT
+@import "layout/header";
+@import "layout/footer";
+
+// PAGES 
+@import "pages/home";
+@import "pages/keyfamily";
+@import "pages/products";
+
+/* CSS PRODUCTS */
+
+
+
+/* CSS KEYFAMILY */
+
+
+
+/* CSS CONTACT */
+
+.mainContact {
+    background: url(../img/portada-contact.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    padding-top: 100px;
+}
+
+.contactText {
+    width: 40vw;
+    padding-left: 50px;
+}
+
+.contactForm {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.formSpace {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    max-width: 270px;
+    min-height: 25px;
+}
+
+.formMessage {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    max-width: 410px;
+    min-height: 105px;
+}
+
+.formSubmit {
+    border-radius: 10px;
+    max-width: 100px;
+    min-height: 35px;
+    background-color: black;
+    color: white;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+}
+
+.labelText {
+    font-size: 18px;
+    padding-top: 13px;
+}
+
+/* CSS SALES-POINTS */
+
+#mainBack {
+    background: url(../img/store-photo.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+}
+
+.mainSP {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: white;
+    display: flex;
+    height: 100vh;
+    text-align: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.maps {
+    max-width: 45vh;
+    max-height: 55vh;
+    border-radius: 55px;
+    margin-top: 0;
+}
+
+.SpTittle {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: white;
+    padding-top: 120px;
+    padding-bottom: 20px;
+}
+
+.flags {
+    max-height: 70px;
+    max-width: 70px;
+}
+
+.countrySalePoint {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*** >> Media Queries << ***/
+
+@media screen and (max-width: 970px) {
+
+    .sectionFlex {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #articleSection {
+        margin: 20px;
+    }
+
+    .welcomeText {
+        width: 60vh;
+        font-size: 20px;
+    }
+    
+    .newsletter {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        
+        align-items: center;
+        max-width: 100vw;
+    }
+
+    .leftNewsletter {
+        max-width: 400px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin-left: 0px;
+    }
+
+    .newsP {
+        text-align: center;
+    }
+
+    .rightNewsletter {
+        max-width: 400px;
+        min-width: 380px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-right: 0px;
+        align-items: center;
+    }
+    
+    .inputNewsletter {
+        width: 100%;
+        max-width: 500px;
+        display: flex;
+        justify-content: center;
+        max-height: 70px;
+    }
+
+    .newsText2 {
+        padding-left: 0px;
+        font-size: 22px;
+    }
+
+    .socialNetworks {
+        flex-wrap: wrap;
+    }
+
+    .logoHome {
+        padding-left: 0px;
+    }
+    
+    .mainSP {
+        display: flex;
+        flex-direction: column;
+        height: 200vh;
+    }
+
+    .maps {
+        max-width: 40vh;
+        max-height: 45vh;
+        border-radius: 55px;
+        margin-top: 0;
+    }
+
+    .flags {
+        max-height: 50px;
+    }
+
+    #mainBack {
+        background-repeat:initial;
+        background-position: center start;
+        text-align: center;
+    }
+    
+    .hSocialNetworks {
+        font-size: 20px;
+    }
+
+    .newsText1 {
+        font-size: 22px;
+    }
+
+    #mainProducts {
+    height: 100%;
+    display: grid;
+    grid-template-areas:
+        "keyboardsSection  keyboardsSection  keyboardsSection"
+        "headphonesSection headphonesSection headphonesSection"
+        "webCamerasSection webCamerasSection webCamerasSection"
+        "mousesSection     mousesSection     mousesSection";
+    }
+
+    .mousesSection {
+        height: 33.3vh;
+    }
+
+    #mainKf {
+        background-repeat: inherit;
+        background-position: start center;
+        text-align: center;
+    }
+
+    .welcomeKf {
+        font-family: 'Kdam Thmor Pro', sans-serif;
+        text-align: center;
+    }
+
+    .mainContact {
+        background-repeat: inherit;
+        background-position: start center;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .contactText {
+        width: 60vw;
+        padding-left: 0px;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .contactForm {
+        width: 40vw;
+        align-items: center;
+    }    
+
+    .hSocialNetworks {
+        text-align: center;
+    }
+}

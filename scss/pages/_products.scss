@@ -1,0 +1,42 @@
+#mainProducts {
+    background-color: black;
+    align-items: center;
+    height: 100%;
+    display: grid;
+    grid-template-areas:
+        "keyboardsSection  keyboardsSection  mousesSection"
+        "headphonesSection headphonesSection mousesSection"
+        "webCamerasSection webCamerasSection mousesSection";
+
+    .keyboardsSection {
+        background-image: url(../img/keygoat-pro-black-60.jpeg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        grid-area: keyboardsSection;
+        height: 33.3vh;
+    }
+
+    .mousesSection {
+        background-image: url(../img/keygoat-mouse-titan-black-1.jpeg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        grid-area: mousesSection;
+        height: 100vh;
+    }
+
+    .headphonesSection {
+        background-image: url(../img/headphones-bull-black.jpeg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        grid-area: headphonesSection;
+        height: 33.3vh;
+    }
+
+    .camsSection {
+        background-image: url(../img/goat-cam-4k-60fps.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        grid-area: webCamerasSection;
+        height: 33.3vh;
+    }
+}

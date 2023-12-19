@@ -1,0 +1,113 @@
+footer {
+    .newsletter {
+        background-color: #000000;
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        padding-top: 60px;
+        font-size: 15px;
+
+        .leftNewsletter {
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+            margin-left: 65px;
+
+            .newsText1 {
+                font-size: 28px;
+            }
+        }
+
+        .rightNewsletter {
+            max-width: 500px;
+            margin-right: 65px;
+
+            .newsText2 {
+                font-size: 28px;
+            }
+
+            .inputNewsletter {
+                width: 100%;
+                max-width: 500px;
+                display: flex;
+                justify-content: space-around;
+                max-height: 70px;
+
+                .emailNewsletter {
+                    border-radius: 5px;
+                    font-family: 'Kdam Thmor Pro', sans-serif;
+                }
+
+                .submitNewsletter {
+                    background-color: white;
+                    max-width: 55px;
+                    max-height: 70px;
+                    margin-left: 10px;
+                    border-radius: 5px;
+
+                    .imgButton {
+                        max-width: 20px;
+                        margin: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    #socialNetworks {
+        padding-bottom: -20px;
+
+        .hSocialNetworks {
+            display: flex;
+            justify-content: center;
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding-top: 45px;
+            margin-bottom: 0;
+        }
+
+        .socialNetworks {
+            background-color: #000000;
+            display: flex;
+            justify-content: center;
+
+            .iconSN {
+                max-width: 55px;
+                margin: 20px;
+                padding-top: 20px;
+            }
+        }
+    }
+
+    .foot {
+        background-image: url(../img/footer-background.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 350px;
+        max-height: 350px;
+        font-size: 12px;
+        padding-top: 0;
+
+        section {
+            display: flex;
+            color: white;
+            justify-content: space-around;
+            padding-top: 100px;
+            font-size: 14px;
+
+            .kgFooter {
+                max-width: 100px;
+                font-size: 12px;
+            }
+
+            .kgAllRights {
+                font-size: 18px;
+            }
+
+            .termsAndCond {
+                color: white;
+            }
+        }
+    }
+}

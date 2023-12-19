@@ -1,0 +1,36 @@
+#mainKf {
+    background: url(../img/portada-contact.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 100px;
+    
+    div {
+        width: 70vw;
+
+        .welcomeKf {
+            font-family: 'Kdam Thmor Pro', sans-serif;
+        }
+    }
+
+    .subscribeButton {
+        background-color: black;
+        border-radius: 15px;
+        min-height: 45px;
+        min-width: 120px;
+        font-size: 17px;
+        font-size: 18px;
+        color: white;
+        font-family: 'Kdam Thmor Pro', sans-serif;
+        box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+
+        .subscribeText {
+            padding: 10px;
+            color: white;
+        }
+    }
+}
