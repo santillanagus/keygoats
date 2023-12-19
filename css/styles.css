@@ -5,6 +5,7 @@
 * {
   margin: 0%;
   padding: 0%;
+  color: white;
 }
 
 .ulItems {
@@ -321,9 +322,6 @@ main #mid .sectionFlex .sectionButton {
   height: 33.3vh;
 }
 
-/* CSS PRODUCTS */
-/* CSS KEYFAMILY */
-/* CSS CONTACT */
 .mainContact {
   background: url(../img/portada-contact.png);
   background-repeat: no-repeat;
@@ -331,23 +329,18 @@ main #mid .sectionFlex .sectionButton {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: white;
-  font-family: "Kdam Thmor Pro", sans-serif;
   padding-top: 100px;
 }
-
-.contactText {
+.mainContact .contactText {
   width: 40vw;
   padding-left: 50px;
 }
-
-.contactForm {
+.mainContact .contactForm {
   width: 40vw;
   display: flex;
   flex-direction: column;
 }
-
-.formSpace {
+.mainContact .contactForm .formSpace {
   font-family: "Kdam Thmor Pro", sans-serif;
   font-family: "Roboto Mono", monospace;
   color: black;
@@ -356,8 +349,7 @@ main #mid .sectionFlex .sectionButton {
   max-width: 270px;
   min-height: 25px;
 }
-
-.formMessage {
+.mainContact .contactForm .formMessage {
   font-family: "Kdam Thmor Pro", sans-serif;
   font-family: "Roboto Mono", monospace;
   color: black;
@@ -366,8 +358,7 @@ main #mid .sectionFlex .sectionButton {
   max-width: 410px;
   min-height: 105px;
 }
-
-.formSubmit {
+.mainContact .contactForm .formSubmit {
   border-radius: 10px;
   max-width: 100px;
   min-height: 35px;
@@ -376,21 +367,24 @@ main #mid .sectionFlex .sectionButton {
   font-family: "Kdam Thmor Pro", sans-serif;
   box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
 }
-
-.labelText {
+.mainContact .contactForm .labelText {
   font-size: 18px;
   padding-top: 13px;
 }
 
-/* CSS SALES-POINTS */
 #mainBack {
   background: url(../img/store-photo.png);
   background-repeat: no-repeat;
   background-position: center center;
   text-align: center;
 }
-
-.mainSP {
+#mainBack .SpTittle {
+  font-family: "Kdam Thmor Pro", sans-serif;
+  color: white;
+  padding-top: 120px;
+  padding-bottom: 20px;
+}
+#mainBack .mainSP {
   font-family: "Kdam Thmor Pro", sans-serif;
   color: white;
   display: flex;
@@ -399,32 +393,23 @@ main #mid .sectionFlex .sectionButton {
   justify-content: space-around;
   flex-direction: row;
 }
-
-.maps {
+#mainBack .mainSP .countrySalePoint {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#mainBack .mainSP .countrySalePoint .flags {
+  max-height: 70px;
+  max-width: 70px;
+}
+#mainBack .mainSP .countrySalePoint .maps {
   max-width: 45vh;
   max-height: 55vh;
   border-radius: 55px;
   margin-top: 0;
 }
 
-.SpTittle {
-  font-family: "Kdam Thmor Pro", sans-serif;
-  color: white;
-  padding-top: 120px;
-  padding-bottom: 20px;
-}
-
-.flags {
-  max-height: 70px;
-  max-width: 70px;
-}
-
-.countrySalePoint {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
+/* CSS SALES-POINTS */
 /*** >> Media Queries << ***/
 @media screen and (max-width: 970px) {
   .sectionFlex {

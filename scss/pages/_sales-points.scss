@@ -1,0 +1,42 @@
+#mainBack {
+    background: url(../img/store-photo.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+
+    .SpTittle {
+        font-family: 'Kdam Thmor Pro', sans-serif;
+        color: white;
+        padding-top: 120px;
+        padding-bottom: 20px;
+    }
+
+    .mainSP {
+        font-family: 'Kdam Thmor Pro', sans-serif;
+        color: white;
+        display: flex;
+        height: 100vh;
+        text-align: center;
+        justify-content: space-around;
+        flex-direction: row;
+
+        .countrySalePoint {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .flags {
+                max-height: 70px;
+                max-width: 70px;
+            }
+
+            .maps {
+                max-width: 45vh;
+                max-height: 55vh;
+                border-radius: 55px;
+                margin-top: 0;
+            }
+
+        }
+    }
+}

@@ -1,0 +1,55 @@
+.mainContact {
+    background: url(../img/portada-contact.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 100px;
+
+    .contactText {
+        width: 40vw;
+        padding-left: 50px;
+    }
+
+    .contactForm {
+        width: 40vw;
+        display: flex;
+        flex-direction: column;
+
+        .formSpace {
+            font-family: 'Kdam Thmor Pro', sans-serif;
+            font-family: 'Roboto Mono', monospace;
+            color: black;
+            background-color: white;
+            border-radius: 10px;
+            max-width: 270px;
+            min-height: 25px;
+        }
+
+        .formMessage {
+            font-family: 'Kdam Thmor Pro', sans-serif;
+            font-family: 'Roboto Mono', monospace;
+            color: black;
+            background-color: white;
+            border-radius: 10px;
+            max-width: 410px;
+            min-height: 105px;
+        }
+
+        .formSubmit {
+            border-radius: 10px;
+            max-width: 100px;
+            min-height: 35px;
+            background-color: black;
+            color: white;
+            font-family: 'Kdam Thmor Pro', sans-serif;
+            box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+        }
+
+        .labelText {
+            font-size: 18px;
+            padding-top: 13px;
+        }
+    }
+}
