@@ -3,8 +3,12 @@
 @media screen and (max-width: 991px) {
 
     /** MQ Header **/
-    header .logoHome {
-        padding-left: 0px;
+    header {
+        nav {
+            .logoHome {
+                padding-left: 0px;
+            }
+        }
     }
 
     /*** MQ Footer ***/

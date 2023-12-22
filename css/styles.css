@@ -415,7 +415,7 @@ main #mid .sectionFlex .sectionButton {
 /*** >> Media Queries << ***/
 @media screen and (max-width: 991px) {
   /** MQ Header **/
-  header .logoHome {
+  header nav .logoHome {
     padding-left: 0px;
   }
   /*** MQ Footer ***/
