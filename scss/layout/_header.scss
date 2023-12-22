@@ -1,26 +1,32 @@
 header {
-    .logoHome {
-    max-height: 65px;
-    padding-left: 80px;
-    }
+    nav {
+        background-color: rgba(0, 0, 0, 0.262);
+        
+        .logoHome {
+            max-height: 65px;
+            padding-left: 80px;
+        }
 
-    .nav-link {
-        color: white;
-    }
+        .nav-link {
+            color: white;
+        }
 
-    .nav-item {
-        padding-left: 8px;
-        padding-right: 8px;
-        font-size: 18px;
-    }
+        .nav-item {
+            padding-left: 8px;
+            padding-right: 8px;
+            font-size: 18px;
+        }
 
-    .navbar-nav {
-        padding-right: 80px;
-    }
-    
-    .ulItems {
-        color: white;
-        font-size: 17px;
-        margin: 15px;
+        .navbar-nav {
+            padding-right: 80px;
+        }
+
+
+
+        .ulItems {
+            color: white;
+            font-size: 17px;
+            margin: 15px;
+        }
     }
 }

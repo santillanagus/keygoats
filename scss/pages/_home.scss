@@ -10,12 +10,10 @@ main {
         background-image: url(../img/portada-index.png);
         background-repeat: no-repeat;
         background-position: center center;
-        font-family: 'Kdam Thmor Pro', sans-serif;
 
         .welcomeText {
             font-size: 23px;
-            width: 85vh;
-            color: white;
+            max-width: 85vh;
         }
 
         .buttonPortadaA {

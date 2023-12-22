@@ -1,0 +1,166 @@
+/*** >> Media Queries << ***/
+
+@media screen and (max-width: 991px) {
+
+    /** MQ Header **/
+    header .logoHome {
+        padding-left: 0px;
+    }
+
+    /*** MQ Footer ***/
+    footer {
+        .newsletter {
+            display: flex;
+            flex-direction: column;
+            margin-left: 0px;
+            align-items: center;
+            max-width: 100vw;
+
+            .leftNewsletter {
+                max-width: 400px;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                padding-left: 0px;
+
+                .newsText1 {
+                    font-size: 22px;
+                }
+
+                .newsP {
+                    text-align: center;
+                }
+            }
+
+            .rightNewsletter {
+                max-width: 400px;
+                min-width: 380px;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                padding-right: 0px;
+
+                .newsText2 {
+                    padding-left: 0px;
+                    font-size: 22px;
+                }
+
+                .inputNewsletter {
+                    width: 100%;
+                    max-width: 500px;
+                    display: flex;
+                    justify-content: center;
+                    max-height: 70px;
+                }
+            }
+        }
+
+        #socialNetworks {
+            .hSocialNetworks {
+                font-size: 20px;
+                text-align: center;
+            }
+
+            .socialNetworks {
+                flex-wrap: wrap;
+            }
+        }
+    }
+
+    /** MQ Home **/
+
+    main {
+        .welcomeText {
+            max-width: 60vh;
+            font-size: 18px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        .sectionFlex {
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #articleSection {
+            margin: 20px;
+        }
+    }
+
+    /** MQ Sales Points **/
+
+    .mainSP {
+        display: flex;
+        flex-direction: column;
+        height: 200vh;
+    }
+
+    .maps {
+        max-width: 40vh;
+        max-height: 45vh;
+        border-radius: 55px;
+        margin-top: 0;
+    }
+
+    .flags {
+        max-height: 50px;
+    }
+
+    #mainBack {
+        background-repeat: initial;
+        background-position: center start;
+        text-align: center;
+    }
+
+    /** MQ Products  **/
+
+    #mainProducts {
+        display: grid;
+        grid-template-areas:
+            "keyboardsSection  keyboardsSection  keyboardsSection"
+            "headphonesSection headphonesSection headphonesSection"
+            "webCamerasSection webCamerasSection webCamerasSection"
+            "mousesSection     mousesSection     mousesSection";
+
+        .mousesSection {
+            max-height: 33.3vh;
+        }
+    }
+
+    /** MQ KeyFamily  **/
+
+    #mainKf {
+        background-repeat: inherit;
+        background-position: start center;
+        text-align: center;
+    }
+
+    .welcomeKf {
+        font-family: 'Kdam Thmor Pro', sans-serif;
+        text-align: center;
+    }
+
+    /** MQ Contact **/
+
+    .mainContact {
+        background-repeat: inherit;
+        background-position: start center;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .contactText {
+        padding-left: 0px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contactForm {
+        align-items: center;
+    }
+
+}

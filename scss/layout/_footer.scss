@@ -11,7 +11,7 @@ footer {
             display: flex;
             flex-direction: column;
             max-width: 500px;
-            margin-left: 65px;
+            padding-left: 65px;
 
             .newsText1 {
                 font-size: 28px;
@@ -20,7 +20,7 @@ footer {
 
         .rightNewsletter {
             max-width: 500px;
-            margin-right: 65px;
+            padding-right: 65px;
 
             .newsText2 {
                 font-size: 28px;

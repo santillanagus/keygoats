@@ -2,9 +2,12 @@
   list-style-type: none;
 }
 
-* {
+body {
   margin: 0%;
   padding: 0%;
+}
+
+* {
   color: white;
 }
 
@@ -60,22 +63,25 @@ body {
   font-size: 14px;
 }
 
-header .logoHome {
+header nav {
+  background-color: rgba(0, 0, 0, 0.262);
+}
+header nav .logoHome {
   max-height: 65px;
   padding-left: 80px;
 }
-header .nav-link {
+header nav .nav-link {
   color: white;
 }
-header .nav-item {
+header nav .nav-item {
   padding-left: 8px;
   padding-right: 8px;
   font-size: 18px;
 }
-header .navbar-nav {
+header nav .navbar-nav {
   padding-right: 80px;
 }
-header .ulItems {
+header nav .ulItems {
   color: white;
   font-size: 17px;
   margin: 15px;
@@ -93,14 +99,14 @@ footer .newsletter .leftNewsletter {
   display: flex;
   flex-direction: column;
   max-width: 500px;
-  margin-left: 65px;
+  padding-left: 65px;
 }
 footer .newsletter .leftNewsletter .newsText1 {
   font-size: 28px;
 }
 footer .newsletter .rightNewsletter {
   max-width: 500px;
-  margin-right: 65px;
+  padding-right: 65px;
 }
 footer .newsletter .rightNewsletter .newsText2 {
   font-size: 28px;
@@ -187,12 +193,10 @@ main #portada {
   background-image: url(../img/portada-index.png);
   background-repeat: no-repeat;
   background-position: center center;
-  font-family: "Kdam Thmor Pro", sans-serif;
 }
 main #portada .welcomeText {
   font-size: 23px;
-  width: 85vh;
-  color: white;
+  max-width: 85vh;
 }
 main #portada .buttonPortadaA {
   text-decoration: none;
@@ -336,7 +340,6 @@ main #mid .sectionFlex .sectionButton {
   padding-left: 50px;
 }
 .mainContact .contactForm {
-  width: 40vw;
   display: flex;
   flex-direction: column;
 }
@@ -409,64 +412,76 @@ main #mid .sectionFlex .sectionButton {
   margin-top: 0;
 }
 
-/* CSS SALES-POINTS */
 /*** >> Media Queries << ***/
-@media screen and (max-width: 970px) {
-  .sectionFlex {
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
+@media screen and (max-width: 991px) {
+  /** MQ Header **/
+  header .logoHome {
+    padding-left: 0px;
   }
-  #articleSection {
-    margin: 20px;
-  }
-  .welcomeText {
-    width: 60vh;
-    font-size: 20px;
-  }
-  .newsletter {
+  /*** MQ Footer ***/
+  footer .newsletter {
     display: flex;
     flex-direction: column;
     margin-left: 0px;
     align-items: center;
     max-width: 100vw;
   }
-  .leftNewsletter {
+  footer .newsletter .leftNewsletter {
     max-width: 400px;
     align-items: center;
     display: flex;
     justify-content: center;
-    margin-left: 0px;
+    padding-left: 0px;
   }
-  .newsP {
+  footer .newsletter .leftNewsletter .newsText1 {
+    font-size: 22px;
+  }
+  footer .newsletter .leftNewsletter .newsP {
     text-align: center;
   }
-  .rightNewsletter {
+  footer .newsletter .rightNewsletter {
     max-width: 400px;
     min-width: 380px;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-right: 0px;
     align-items: center;
+    padding-right: 0px;
   }
-  .inputNewsletter {
+  footer .newsletter .rightNewsletter .newsText2 {
+    padding-left: 0px;
+    font-size: 22px;
+  }
+  footer .newsletter .rightNewsletter .inputNewsletter {
     width: 100%;
     max-width: 500px;
     display: flex;
     justify-content: center;
     max-height: 70px;
   }
-  .newsText2 {
-    padding-left: 0px;
-    font-size: 22px;
+  footer #socialNetworks .hSocialNetworks {
+    font-size: 20px;
+    text-align: center;
   }
-  .socialNetworks {
+  footer #socialNetworks .socialNetworks {
     flex-wrap: wrap;
   }
-  .logoHome {
-    padding-left: 0px;
+  /** MQ Home **/
+  main .welcomeText {
+    max-width: 60vh;
+    font-size: 18px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
+  main .sectionFlex {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  main #articleSection {
+    margin: 20px;
+  }
+  /** MQ Sales Points **/
   .mainSP {
     display: flex;
     flex-direction: column;
@@ -486,20 +501,15 @@ main #mid .sectionFlex .sectionButton {
     background-position: center start;
     text-align: center;
   }
-  .hSocialNetworks {
-    font-size: 20px;
-  }
-  .newsText1 {
-    font-size: 22px;
-  }
+  /** MQ Products  **/
   #mainProducts {
-    height: 100%;
     display: grid;
     grid-template-areas: "keyboardsSection  keyboardsSection  keyboardsSection" "headphonesSection headphonesSection headphonesSection" "webCamerasSection webCamerasSection webCamerasSection" "mousesSection     mousesSection     mousesSection";
   }
-  .mousesSection {
-    height: 33.3vh;
+  #mainProducts .mousesSection {
+    max-height: 33.3vh;
   }
+  /** MQ KeyFamily  **/
   #mainKf {
     background-repeat: inherit;
     background-position: start center;
@@ -509,6 +519,7 @@ main #mid .sectionFlex .sectionButton {
     font-family: "Kdam Thmor Pro", sans-serif;
     text-align: center;
   }
+  /** MQ Contact **/
   .mainContact {
     background-repeat: inherit;
     background-position: start center;
@@ -518,17 +529,12 @@ main #mid .sectionFlex .sectionButton {
     flex-direction: column;
   }
   .contactText {
-    width: 60vw;
     padding-left: 0px;
     align-items: center;
     text-align: center;
   }
   .contactForm {
-    width: 40vw;
     align-items: center;
-  }
-  .hSocialNetworks {
-    text-align: center;
   }
 }
 
