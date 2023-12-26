@@ -1,3 +1,7 @@
+// VARS
+$gray-color: #808084;
+$black-color: #000000;
+
 main {
     #portada {
         display: flex;
@@ -6,7 +10,7 @@ main {
         align-items: center;
         flex-direction: column;
         height: 100vh;
-        background: linear-gradient(360deg, #808084, #000000);
+        background: linear-gradient(360deg, $gray-color, $black-color);
         background-image: url(../img/portada-index.png);
         background-repeat: no-repeat;
         background-position: center center;
@@ -34,7 +38,7 @@ main {
         }
 
         .sectionFlex {
-            background: linear-gradient(180deg, #808084, #000000);
+            background: linear-gradient(180deg, $gray-color, $black-color);
             display: flex;
             justify-content: space-around;
 
@@ -42,7 +46,7 @@ main {
                 display: flex;
                 width: 335px;
                 min-height: 590px;
-                background: linear-gradient(360deg, #808084, #000000);
+                background: linear-gradient(360deg, $gray-color, $black-color);
                 color: white;
                 border-radius: 20px;
                 text-align: center;
