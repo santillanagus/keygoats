@@ -75,13 +75,6 @@
     /** MQ Home **/
 
     main {
-        .welcomeText {
-            max-width: 60vh;
-            font-size: 18px;
-            padding-left: 30px;
-            padding-right: 30px;
-        }
-
         .sectionFlex {
             width: 100%;
             flex-direction: column;
@@ -91,31 +84,38 @@
         #articleSection {
             margin: 20px;
         }
+        #portada {
+            .welcomeText {
+                max-width: 60vh;
+                font-size: 18px;
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+        }
     }
 
     /** MQ Sales Points **/
-
-    .mainSP {
-        display: flex;
-        flex-direction: column;
-        height: 200vh;
-    }
-
-    .maps {
-        max-width: 40vh;
-        max-height: 45vh;
-        border-radius: 55px;
-        margin-top: 0;
-    }
-
-    .flags {
-        max-height: 50px;
-    }
-
     #mainBack {
         background-repeat: initial;
         background-position: center start;
         text-align: center;
+
+        .mainSP {
+            display: flex;
+            flex-direction: column;
+            height: 200vh;
+
+            .flags {
+                max-height: 50px;
+            }
+
+            .maps {
+                max-width: 40vh;
+                max-height: 45vh;
+                border-radius: 55px;
+                margin-top: 0;
+            }
+        }
     }
 
     /** MQ Products  **/
@@ -155,16 +155,53 @@
         align-items: center;
         justify-content: space-between;
         flex-direction: column;
-    }
 
-    .contactText {
-        padding-left: 0px;
-        align-items: center;
-        text-align: center;
-    }
+        .contactText {
+            padding-left: 0px;
+            align-items: center;
+            text-align: center;
+            width: 70vw;
+        }
+    
+        .contactForm {
+            align-items: center;
+            padding-right: 0px;
+            max-width: 70vw;
 
-    .contactForm {
-        align-items: center;
-    }
+            .formSpace {
+                width: 100vw;
+                text-align: center;
+            }
 
+            .formMessage {
+                width: 100vw;
+                text-align: center;
+            }
+        }
+    }
 }
+
+@media screen and (max-width: 460px) {
+    
+    /** MQ Home **/
+    main {
+            #portada {
+                .welcomeText {
+                    font-size: 18px;
+                }
+            }
+        }
+    /** MQ Contact **/
+    .mainContact {
+            .contactForm {
+                .formSpace {
+                    width: 60vw;
+                    text-align: center;
+                }
+
+                .formMessage {
+                    width: 60vw;
+                }
+            }
+        }
+    }

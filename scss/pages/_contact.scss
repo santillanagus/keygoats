@@ -1,3 +1,8 @@
+// VARS
+$white-color: white;
+$black-color: black;
+$shadow-color: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+
 .mainContact {
     background: url(../img/portada-contact.png);
     background-repeat: no-repeat;
@@ -15,24 +20,24 @@
     .contactForm {
         display: flex;
         flex-direction: column;
+        padding-right: 50px;
+        width: 35vw;
 
         .formSpace {
             font-family: 'Kdam Thmor Pro', sans-serif;
-            font-family: 'Roboto Mono', monospace;
-            color: black;
-            background-color: white;
+            color: $black-color;
+            background-color: $white-color;
             border-radius: 10px;
-            max-width: 270px;
+            max-width: 370px;
             min-height: 25px;
         }
 
         .formMessage {
             font-family: 'Kdam Thmor Pro', sans-serif;
-            font-family: 'Roboto Mono', monospace;
-            color: black;
-            background-color: white;
+            color: $black-color;
+            background-color: $white-color;
             border-radius: 10px;
-            max-width: 410px;
+            max-width: 370px;
             min-height: 105px;
         }
 
@@ -40,10 +45,10 @@
             border-radius: 10px;
             max-width: 100px;
             min-height: 35px;
-            background-color: black;
-            color: white;
+            background-color: $black-color;
+            color: $white-color;
             font-family: 'Kdam Thmor Pro', sans-serif;
-            box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+            box-shadow: $shadow-color;
         }
 
         .labelText {

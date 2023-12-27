@@ -1,5 +1,8 @@
+// VARS
+$black-color: black;
+
 #mainProducts {
-    background-color: black;
+    background-color: $black-color;
     align-items: center;
     height: 100%;
     display: grid;

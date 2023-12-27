@@ -189,7 +189,7 @@ main #portada {
   align-items: center;
   flex-direction: column;
   height: 100vh;
-  background: linear-gradient(360deg, #808084, #000000);
+  background: linear-gradient(360deg, #808084, black);
   background-image: url(../img/portada-index.png);
   background-repeat: no-repeat;
   background-position: center center;
@@ -212,7 +212,7 @@ main #mid .hNews {
   font-family: "Kdam Thmor Pro", sans-serif;
 }
 main #mid .sectionFlex {
-  background: linear-gradient(180deg, #808084, #000000);
+  background: linear-gradient(180deg, #808084, black);
   display: flex;
   justify-content: space-around;
 }
@@ -220,7 +220,7 @@ main #mid .sectionFlex #articleSection {
   display: flex;
   width: 335px;
   min-height: 590px;
-  background: linear-gradient(360deg, #808084, #000000);
+  background: linear-gradient(360deg, #808084, black);
   color: white;
   border-radius: 20px;
   text-align: center;
@@ -342,23 +342,23 @@ main #mid .sectionFlex .sectionButton {
 .mainContact .contactForm {
   display: flex;
   flex-direction: column;
+  padding-right: 50px;
+  width: 35vw;
 }
 .mainContact .contactForm .formSpace {
   font-family: "Kdam Thmor Pro", sans-serif;
-  font-family: "Roboto Mono", monospace;
   color: black;
   background-color: white;
   border-radius: 10px;
-  max-width: 270px;
+  max-width: 370px;
   min-height: 25px;
 }
 .mainContact .contactForm .formMessage {
   font-family: "Kdam Thmor Pro", sans-serif;
-  font-family: "Roboto Mono", monospace;
   color: black;
   background-color: white;
   border-radius: 10px;
-  max-width: 410px;
+  max-width: 370px;
   min-height: 105px;
 }
 .mainContact .contactForm .formSubmit {
@@ -467,12 +467,6 @@ main #mid .sectionFlex .sectionButton {
     flex-wrap: wrap;
   }
   /** MQ Home **/
-  main .welcomeText {
-    max-width: 60vh;
-    font-size: 18px;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
   main .sectionFlex {
     width: 100%;
     flex-direction: column;
@@ -481,25 +475,31 @@ main #mid .sectionFlex .sectionButton {
   main #articleSection {
     margin: 20px;
   }
+  main #portada .welcomeText {
+    max-width: 60vh;
+    font-size: 18px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
   /** MQ Sales Points **/
-  .mainSP {
-    display: flex;
-    flex-direction: column;
-    height: 200vh;
-  }
-  .maps {
-    max-width: 40vh;
-    max-height: 45vh;
-    border-radius: 55px;
-    margin-top: 0;
-  }
-  .flags {
-    max-height: 50px;
-  }
   #mainBack {
     background-repeat: initial;
     background-position: center start;
     text-align: center;
+  }
+  #mainBack .mainSP {
+    display: flex;
+    flex-direction: column;
+    height: 200vh;
+  }
+  #mainBack .mainSP .flags {
+    max-height: 50px;
+  }
+  #mainBack .mainSP .maps {
+    max-width: 40vh;
+    max-height: 45vh;
+    border-radius: 55px;
+    margin-top: 0;
   }
   /** MQ Products  **/
   #mainProducts {
@@ -528,13 +528,38 @@ main #mid .sectionFlex .sectionButton {
     justify-content: space-between;
     flex-direction: column;
   }
-  .contactText {
+  .mainContact .contactText {
     padding-left: 0px;
     align-items: center;
     text-align: center;
+    width: 70vw;
   }
-  .contactForm {
+  .mainContact .contactForm {
     align-items: center;
+    padding-right: 0px;
+    max-width: 70vw;
+  }
+  .mainContact .contactForm .formSpace {
+    width: 100vw;
+    text-align: center;
+  }
+  .mainContact .contactForm .formMessage {
+    width: 100vw;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 460px) {
+  /** MQ Home **/
+  main #portada .welcomeText {
+    font-size: 18px;
+  }
+  /** MQ Contact **/
+  .mainContact .contactForm .formSpace {
+    width: 60vw;
+    text-align: center;
+  }
+  .mainContact .contactForm .formMessage {
+    width: 60vw;
   }
 }
 

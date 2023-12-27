@@ -1,6 +1,6 @@
 // VARS
 $gray-color: #808084;
-$black-color: #000000;
+$black-color: black;
 
 main {
     #portada {
@@ -83,7 +83,7 @@ main {
                 min-width: 170px;
                 min-height: 40px;
                 font-size: 18px;
-                color: black;
+                color: $black-color;
                 font-family: 'Kdam Thmor Pro', sans-serif;
                 margin-top: 4%;
             }
