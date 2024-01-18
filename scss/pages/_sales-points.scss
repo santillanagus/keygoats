@@ -9,19 +9,16 @@ $shadow-color: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px
     background-position: center center;
     display: flex;
     text-align: center;
-    justify-content: center;
     flex-direction: column;
     padding-top: 120px;
 
     .SpTittle {
         color: $white-color;
-        padding-bottom: 30pxgit;
     }
 
     .mainSP {
-        color: $white-color;
         display: flex;
-        text-align: center;
+        align-items: center;
         justify-content: space-around;
         flex-direction: row;
         padding-top: 20px;
