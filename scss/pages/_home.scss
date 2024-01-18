@@ -10,7 +10,6 @@ main {
         align-items: center;
         flex-direction: column;
         height: 100vh;
-        background: linear-gradient(360deg, $gray-color, $black-color);
         background-image: url(../img/portada-index.png);
         background-repeat: no-repeat;
         background-position: center center;
@@ -50,31 +49,31 @@ main {
                 color: white;
                 border-radius: 20px;
                 text-align: center;
-                justify-content: center;
+                justify-content: start;
                 flex-direction: column;
                 align-items: center;
                 box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
                 font-family: 'Kdam Thmor Pro', sans-serif;
             }
 
-            #esportsImg {
+            .esportsImg {
                 max-width: 270px;
-                border-radius: 12px;
-            }
-
-            .borderImg {
-                margin-top: -40px;
+                border-radius: 17px;
+                padding-top: 40px;
             }
 
             .hTittle {
                 margin-top: 5.5%;
                 margin-bottom: 0%;
+                font-size: 20px;
             }
 
             .sectionText {
                 min-width: 30vh;
                 max-width: 36vh;
                 padding-top: 18px;
+                padding-left: 10px;
+                padding-right: 10px;
             }
 
             .sectionButton {
@@ -85,7 +84,6 @@ main {
                 font-size: 18px;
                 color: $black-color;
                 font-family: 'Kdam Thmor Pro', sans-serif;
-                margin-top: 4%;
             }
         }
     }

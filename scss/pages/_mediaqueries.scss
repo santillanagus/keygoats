@@ -81,7 +81,7 @@
         }
 
         #articleSection {
-            margin: 20px;
+            margin-top: 20px;
         }
 
         #portada {
@@ -227,26 +227,27 @@
     /** MQ Products **/
 
     #mainProducts {
-    
+
         .productsTittle {
             font-size: 23px;
             padding-right: 30px;
             margin-bottom: 0px;
         }
-    
+
         .productsDescription {
             font-size: 12px;
             padding-right: 30px;
             padding-left: 30px;
             margin-bottom: 5px;
         }
-    
+
         .seeProducts {
             font-size: 13px;
             padding-right: 30px;
             margin-bottom: 12px;
         }
     }
+
     /** MQ Footer **/
     footer {
 
@@ -279,10 +280,9 @@
 }
 
 @media screen and (max-width: 360px) {
+
     #mainBack {
-
         .mainSP {
-
             .countrySalePoint {
 
                 .flags {
@@ -292,6 +292,29 @@
                 .maps {
                     width: 280px;
                     height: 350px;
+                }
+            }
+        }
+    }
+
+    main {
+        
+        #mid {
+    
+            .sectionFlex {
+
+                #articleSection {
+                    display: flex;
+                    width: 300px;
+                    min-height: 560px;
+                }
+
+                .sectionButton {
+                    min-width: 130px;
+                    min-height: 20px;
+                    font-size: 18px;
+                    color: $black-color;
+                    font-family: 'Kdam Thmor Pro', sans-serif;
                 }
             }
         }

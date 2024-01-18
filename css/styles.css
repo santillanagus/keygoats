@@ -205,7 +205,6 @@ main #portada {
   align-items: center;
   flex-direction: column;
   height: 100vh;
-  background: linear-gradient(360deg, #808084, black);
   background-image: url(../img/portada-index.png);
   background-repeat: no-repeat;
   background-position: center center;
@@ -240,27 +239,28 @@ main #mid .sectionFlex #articleSection {
   color: white;
   border-radius: 20px;
   text-align: center;
-  justify-content: center;
+  justify-content: start;
   flex-direction: column;
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   font-family: "Kdam Thmor Pro", sans-serif;
 }
-main #mid .sectionFlex #esportsImg {
+main #mid .sectionFlex .esportsImg {
   max-width: 270px;
-  border-radius: 12px;
-}
-main #mid .sectionFlex .borderImg {
-  margin-top: -40px;
+  border-radius: 17px;
+  padding-top: 40px;
 }
 main #mid .sectionFlex .hTittle {
   margin-top: 5.5%;
   margin-bottom: 0%;
+  font-size: 20px;
 }
 main #mid .sectionFlex .sectionText {
   min-width: 30vh;
   max-width: 36vh;
   padding-top: 18px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 main #mid .sectionFlex .sectionButton {
   background-color: white;
@@ -270,7 +270,6 @@ main #mid .sectionFlex .sectionButton {
   font-size: 18px;
   color: black;
   font-family: "Kdam Thmor Pro", sans-serif;
-  margin-top: 4%;
 }
 
 #mainKf {
@@ -289,6 +288,7 @@ main #mid .sectionFlex .sectionButton {
 }
 #mainKf div .welcomeKf {
   font-family: "Kdam Thmor Pro", sans-serif;
+  font-size: 30px;
 }
 #mainKf .subscribeButton {
   background-color: black;
@@ -462,6 +462,7 @@ main #mid .sectionFlex .sectionButton {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 10px;
 }
 #mainBack .mainSP .countrySalePoint .flags {
   max-width: 70px;
@@ -587,7 +588,7 @@ main #mid .sectionFlex .sectionButton {
     align-items: center;
   }
   main #articleSection {
-    margin: 20px;
+    margin-top: 20px;
   }
   main #portada .welcomeText {
     max-width: 60vh;
@@ -729,6 +730,18 @@ main #mid .sectionFlex .sectionButton {
   #mainBack .mainSP .countrySalePoint .maps {
     width: 280px;
     height: 350px;
+  }
+  main #mid .sectionFlex #articleSection {
+    display: flex;
+    width: 300px;
+    min-height: 560px;
+  }
+  main #mid .sectionFlex .sectionButton {
+    min-width: 130px;
+    min-height: 20px;
+    font-size: 18px;
+    color: black;
+    font-family: "Kdam Thmor Pro", sans-serif;
   }
 }
 
