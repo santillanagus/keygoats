@@ -7,23 +7,26 @@ $shadow-color: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px
     background: url(../img/store-photo.png);
     background-repeat: no-repeat;
     background-position: center center;
+    display: flex;
     text-align: center;
+    justify-content: center;
+    flex-direction: column;
 
     .SpTittle {
         font-family: 'Kdam Thmor Pro', sans-serif;
         color: $white-color;
         padding-top: 120px;
-        padding-bottom: 20px;
     }
 
     .mainSP {
         font-family: 'Kdam Thmor Pro', sans-serif;
         color: $white-color;
         display: flex;
-        height: 100vh;
         text-align: center;
         justify-content: space-around;
         flex-direction: row;
+        padding-top: 60px;
+        padding-bottom: 40px;
 
         .countrySalePoint {
             display: flex;

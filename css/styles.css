@@ -441,22 +441,25 @@ main #mid .sectionFlex .sectionButton {
   background: url(../img/store-photo.png);
   background-repeat: no-repeat;
   background-position: center center;
+  display: flex;
   text-align: center;
+  justify-content: center;
+  flex-direction: column;
 }
 #mainBack .SpTittle {
   font-family: "Kdam Thmor Pro", sans-serif;
   color: white;
   padding-top: 120px;
-  padding-bottom: 20px;
 }
 #mainBack .mainSP {
   font-family: "Kdam Thmor Pro", sans-serif;
   color: white;
   display: flex;
-  height: 100vh;
   text-align: center;
   justify-content: space-around;
   flex-direction: row;
+  padding-top: 60px;
+  padding-bottom: 40px;
 }
 #mainBack .mainSP .countrySalePoint {
   display: flex;
