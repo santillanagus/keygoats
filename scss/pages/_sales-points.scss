@@ -31,13 +31,12 @@ $shadow-color: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px
             align-items: center;
 
             .flags {
-                max-height: 70px;
                 max-width: 70px;
             }
 
             .maps {
-                max-width: 45vh;
-                max-height: 55vh;
+                width: 340px;
+                height: 400px;
                 border-radius: 55px;
                 margin-top: 0;
             }

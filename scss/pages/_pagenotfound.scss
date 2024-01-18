@@ -1,0 +1,60 @@
+#mainPageNotFound {
+    background-image: url(../img/portada-index.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    height: 100vh;
+    padding-top: 120px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .notFoundSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        p {
+            padding-left: 50px;
+            padding-right: 50px;
+            font-size: 22px;
+            text-align: center;
+        }
+
+        .hr-one {
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.57), rgb(255, 255, 255), rgba(255, 255, 255, 0.57));
+            width: 800px;
+            margin-top: 0px;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        h1 {
+            font-size: 30px;
+            text-align: center;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        .goatPet {
+            max-width: 200px;
+        }
+    }
+
+    .buttonPageNotFound {
+        border-radius: 10px;
+        min-width: 170px;
+        min-height: 40px;
+        font-size: 18px;
+        background-color: black;
+        font-family: "Kdam Thmor Pro", sans-serif;
+        box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+}

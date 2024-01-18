@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="On this contact page you can contact our customer service by completing a form where you can describe your problem or question.">
+    <meta name="keywords" content="KeyGoats, gamer, peripherals, mechanical keyboards, mouses, e-sports">
     <link rel="shortcut icon" href="../img/keygoats-favicon.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -30,16 +32,16 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="../pages/products.html">Products</a>
+                            <a class="nav-link" href="products.html">Products</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../pages/keyfamily.html">KeyFamily</a>
+                            <a class="nav-link" href="keyfamily.html">KeyFamily</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../pages/contact.html">Contact</a>
+                            <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../pages/sales-points.html">Sales Points</a>
+                            <a class="nav-link" href="sales-points.html">Sales Points</a>
                         </li>
                     </ul>
                 </div>
@@ -65,44 +67,44 @@
                 include as much detail as possible in your email, including your order number if applicable, so we can
                 assist you more effectively.</p>
         </div>
-        <div class="contactForm">
+        <form class="contactForm">
             <label for="name" class="labelText">Name:</label>
-            <input type="text" name="" id="name" placeholder="Please enter your full name" class="formSpace" required>
+            <input type="text" name="name" id="name" placeholder="Please enter your full name" class="formSpace" required>
             <label for="email" class="labelText">Email:</label>
-            <input type="email" name="" id="email" placeholder="Please enter your email address" class="formSpace"
+            <input type="email" name="email" id="email" placeholder="Please enter your email address" class="formSpace"
                 required>
             <label for="subject" class="labelText">Subject:</label>
-            <input type="text" name="" id="subject" placeholder="¿What can we help you with?" class="formSpace" required>
+            <input type="text" name="subject" id="subject" placeholder="¿What can we help you with?" class="formSpace"
+                required>
             <label for="message" class="labelText">Message:</label>
-            <input type="text" name="" id="message" placeholder="Please describe your issue or question in detail"
+            <input type="text" name="message" id="message" placeholder="Please describe your issue or question in detail"
                 class="formMessage" required>
-            <br>
-            <input type="submit" value="Submit" class="formSubmit">
-        </div>
+            <input type="submit" value="Submit" class="buttonSubmit">
+        </form>
     </main>
     <!-- Footer  -->
     <footer>
         <!-- Newsletter -->
         <section class="newsletter">
             <div class="leftNewsletter">
-                <h2>NEWSLETTER KEYGOATS</h2>
+                <p class="newsText1">NEWSLETTER KEYGOATS</p>
                 <p class="newsP">Find out about the most important news from the KeyGoats world: events, launches,
                     projects; relevant
                     and up-to-date information that you won't want to miss.</p>
             </div>
             <div class="rightNewsletter">
-                <h2>NEW RELEASES:</h2>
-                <div class="inputNewsletter">
+                <p class="newsText2">NEW RELEASES:</p>
+                <form class="inputNewsletter">
                     <input type="email" name="Insert-email" id="" placeholder="Email (Ex: mail@gmail.com)"
                         class="emailNewsletter">
                     <button class="submitNewsletter"><img src="../img/send.png" alt="send-button" class="imgButton"
                             title="Submit"></button>
-                </div>
+                </form>
             </div>
         </section>
         <!-- Social Networks -->
         <section id="socialNetworks">
-            <h3 class="hSocialNetworks">FOLLOW KEYGOATS SOCIAL NETWORKS:</h3>
+            <p class="hSocialNetworks">FOLLOW KEYGOATS SOCIAL NETWORKS:</p>
             <div class="socialNetworks">
                 <article>
                     <a href="https://www.instagram.com/keygoats/" title="Instagram" target="_blank"><img
@@ -137,13 +139,13 @@
                     <img src="../img/keygoats-icon-byn.png" alt="keygoats-logo" class="kgFooter">
                 </div>
                 <div>
-                    <h4>©KeyGoats 2023 - ALL RIGHTS RESERVED.</h4>
+                    <p>©KeyGoats 2023 - ALL RIGHTS RESERVED.</p>
                     <a href="" class="termsAndCond">TERMS AND CONDITIONS - COOKIES</a>
                 </div>
             </section>
             <div class="buttonPosition">
                 <button class="buttonGoToStart">
-                    <a href="#" class="goToStart" title="Go to start">Go to start</a>
+                    <a href="contact.html" class="goToStart" title="Go to start">Go to start</a>
                 </button>
             </div>
         </div>

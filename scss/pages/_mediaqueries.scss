@@ -38,7 +38,6 @@
 
             .rightNewsletter {
                 max-width: 400px;
-                min-width: 380px;
                 display: flex;
                 justify-content: center;
                 flex-direction: column;
@@ -84,6 +83,7 @@
         #articleSection {
             margin: 20px;
         }
+
         #portada {
             .welcomeText {
                 max-width: 60vh;
@@ -106,14 +106,12 @@
             height: 200vh;
 
             .flags {
-                max-height: 50px;
+                max-height: 60px;
             }
 
             .maps {
-                max-width: 40vh;
-                max-height: 45vh;
-                border-radius: 55px;
-                margin-top: 0;
+                width: 340px;
+                height: 400px;
             }
         }
     }
@@ -128,8 +126,28 @@
             "webCamerasSection webCamerasSection webCamerasSection"
             "mousesSection     mousesSection     mousesSection";
 
+        .productsTittle {
+            font-size: 26px;
+        }
+
+        .keyboardsSection {
+            height: 33.3vh;
+            width: 100vw;
+        }
+
         .mousesSection {
             max-height: 33.3vh;
+            width: 100vw;
+        }
+
+        .headphonesSection {
+            height: 33.3vh;
+            width: 100vw;
+        }
+
+        .camsSection {
+            height: 33.3vh;
+            width: 100vw;
         }
     }
 
@@ -162,7 +180,7 @@
             text-align: center;
             width: 70vw;
         }
-    
+
         .contactForm {
             align-items: center;
             padding-right: 0px;
@@ -182,26 +200,100 @@
 }
 
 @media screen and (max-width: 460px) {
-    
+
     /** MQ Home **/
     main {
-            #portada {
-                .welcomeText {
-                    font-size: 18px;
-                }
+        #portada {
+            .welcomeText {
+                font-size: 18px;
             }
         }
+    }
+
     /** MQ Contact **/
     .mainContact {
-            .contactForm {
-                .formSpace {
-                    width: 60vw;
-                    text-align: center;
+        .contactForm {
+            .formSpace {
+                width: 60vw;
+                text-align: center;
+            }
+
+            .formMessage {
+                width: 60vw;
+            }
+        }
+    }
+
+    /** MQ Products **/
+
+    #mainProducts {
+    
+        .productsTittle {
+            font-size: 23px;
+            padding-right: 30px;
+            margin-bottom: 0px;
+        }
+    
+        .productsDescription {
+            font-size: 12px;
+            padding-right: 30px;
+            padding-left: 30px;
+            margin-bottom: 5px;
+        }
+    
+        .seeProducts {
+            font-size: 13px;
+            padding-right: 30px;
+            margin-bottom: 12px;
+        }
+    }
+    /** MQ Footer **/
+    footer {
+
+        .foot {
+
+            section {
+
+                .kgFooter {
+                    max-width: 80px;
+                    padding-left: 10px;
                 }
 
-                .formMessage {
-                    width: 60vw;
+                div {
+
+                    p {
+                        padding-left: 8px;
+                        padding-right: 8px;
+                    }
+
+                    .termsAndCond {
+                        padding-left: 8px;
+                        padding-right: 8px;
+                        text-align: justify;
+                        font-size: 10px;
+                    }
                 }
             }
         }
     }
+}
+
+@media screen and (max-width: 360px) {
+    #mainBack {
+
+        .mainSP {
+
+            .countrySalePoint {
+
+                .flags {
+                    max-height: 50px;
+                }
+
+                .maps {
+                    width: 280px;
+                    height: 350px;
+                }
+            }
+        }
+    }
+}

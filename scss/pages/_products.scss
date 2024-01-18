@@ -11,35 +11,83 @@ $black-color: black;
         "headphonesSection headphonesSection mousesSection"
         "webCamerasSection webCamerasSection mousesSection";
 
+    .productsTittle {
+        color: white;
+        font-size: 30px;
+        padding-right: 30px;
+        margin-bottom: 0px;
+    }
+
+    .productsDescription {
+        color: white;
+        font-size: 15px;
+        padding-right: 30px;
+        padding-left: 100px;
+        text-align: end;
+        margin-bottom: 5px;
+    }
+
+    .seeProducts {
+        text-decoration: underline;
+        color: white;
+        font-size: 15px;
+        padding-right: 30px;
+        margin-bottom: 8px;
+    }
+    
     .keyboardsSection {
         background-image: url(../img/keygoat-pro-black-60.jpeg);
         background-repeat: no-repeat;
         background-position: center center;
+        background-size: cover;
         grid-area: keyboardsSection;
         height: 33.3vh;
+        display: flex;
+        justify-content: flex-end;
+        align-items: end;
+        flex-direction: column;
+        width: 75vw;
     }
 
     .mousesSection {
         background-image: url(../img/keygoat-mouse-titan-black-1.jpeg);
         background-repeat: no-repeat;
         background-position: center center;
+        background-size: cover;
         grid-area: mousesSection;
         height: 100vh;
+        display: flex;
+        justify-content: flex-end;
+        align-items: end;
+        flex-direction: column;
+        width: 25vw;
     }
 
     .headphonesSection {
         background-image: url(../img/headphones-bull-black.jpeg);
         background-repeat: no-repeat;
         background-position: center center;
+        background-size: cover;
         grid-area: headphonesSection;
         height: 33.3vh;
+        display: flex;
+        justify-content: flex-end;
+        align-items: end;
+        flex-direction: column;
+        width: 75vw;
     }
 
     .camsSection {
         background-image: url(../img/goat-cam-4k-60fps.png);
         background-repeat: no-repeat;
         background-position: center center;
+        background-size: cover;
         grid-area: webCamerasSection;
         height: 33.3vh;
+        display: flex;
+        justify-content: flex-end;
+        align-items: end;
+        flex-direction: column;
+        width: 75vw;
     }
 }

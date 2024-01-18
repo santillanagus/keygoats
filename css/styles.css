@@ -43,6 +43,16 @@ body {
   box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
 }
 
+#mainPageNotFound .buttonPageNotFound {
+  border-radius: 10px;
+  min-width: 170px;
+  min-height: 40px;
+  font-size: 18px;
+  background-color: black;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+}
+
 .buttonPosition {
   display: flex;
   justify-content: center;
@@ -104,6 +114,10 @@ footer .newsletter .leftNewsletter {
 footer .newsletter .leftNewsletter .newsText1 {
   font-size: 28px;
 }
+footer .newsletter .leftNewsletter .newsP {
+  padding-left: 10px;
+  padding-right: 10px;
+}
 footer .newsletter .rightNewsletter {
   max-width: 500px;
   padding-right: 65px;
@@ -121,6 +135,7 @@ footer .newsletter .rightNewsletter .inputNewsletter {
 footer .newsletter .rightNewsletter .inputNewsletter .emailNewsletter {
   border-radius: 5px;
   font-family: "Kdam Thmor Pro", sans-serif;
+  color: black;
 }
 footer .newsletter .rightNewsletter .inputNewsletter .submitNewsletter {
   background-color: white;
@@ -144,6 +159,7 @@ footer #socialNetworks .hSocialNetworks {
   margin: 0;
   padding-top: 45px;
   margin-bottom: 0;
+  font-size: 25px;
 }
 footer #socialNetworks .socialNetworks {
   background-color: #000000;
@@ -297,33 +313,78 @@ main #mid .sectionFlex .sectionButton {
   display: grid;
   grid-template-areas: "keyboardsSection  keyboardsSection  mousesSection" "headphonesSection headphonesSection mousesSection" "webCamerasSection webCamerasSection mousesSection";
 }
+#mainProducts .productsTittle {
+  color: white;
+  font-size: 30px;
+  padding-right: 30px;
+  margin-bottom: 0px;
+}
+#mainProducts .productsDescription {
+  color: white;
+  font-size: 15px;
+  padding-right: 30px;
+  padding-left: 100px;
+  text-align: end;
+  margin-bottom: 5px;
+}
+#mainProducts .seeProducts {
+  text-decoration: underline;
+  color: white;
+  font-size: 15px;
+  padding-right: 30px;
+  margin-bottom: 8px;
+}
 #mainProducts .keyboardsSection {
   background-image: url(../img/keygoat-pro-black-60.jpeg);
   background-repeat: no-repeat;
   background-position: center center;
+  background-size: cover;
   grid-area: keyboardsSection;
   height: 33.3vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+  flex-direction: column;
+  width: 75vw;
 }
 #mainProducts .mousesSection {
   background-image: url(../img/keygoat-mouse-titan-black-1.jpeg);
   background-repeat: no-repeat;
   background-position: center center;
+  background-size: cover;
   grid-area: mousesSection;
   height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+  flex-direction: column;
+  width: 25vw;
 }
 #mainProducts .headphonesSection {
   background-image: url(../img/headphones-bull-black.jpeg);
   background-repeat: no-repeat;
   background-position: center center;
+  background-size: cover;
   grid-area: headphonesSection;
   height: 33.3vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+  flex-direction: column;
+  width: 75vw;
 }
 #mainProducts .camsSection {
   background-image: url(../img/goat-cam-4k-60fps.png);
   background-repeat: no-repeat;
   background-position: center center;
+  background-size: cover;
   grid-area: webCamerasSection;
   height: 33.3vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+  flex-direction: column;
+  width: 75vw;
 }
 
 .mainContact {
@@ -361,7 +422,8 @@ main #mid .sectionFlex .sectionButton {
   max-width: 370px;
   min-height: 105px;
 }
-.mainContact .contactForm .formSubmit {
+.mainContact .contactForm .buttonSubmit {
+  margin-top: 20px;
   border-radius: 10px;
   max-width: 100px;
   min-height: 35px;
@@ -402,14 +464,67 @@ main #mid .sectionFlex .sectionButton {
   align-items: center;
 }
 #mainBack .mainSP .countrySalePoint .flags {
-  max-height: 70px;
   max-width: 70px;
 }
 #mainBack .mainSP .countrySalePoint .maps {
-  max-width: 45vh;
-  max-height: 55vh;
+  width: 340px;
+  height: 400px;
   border-radius: 55px;
   margin-top: 0;
+}
+
+#mainPageNotFound {
+  background-image: url(../img/portada-index.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  height: 100vh;
+  padding-top: 120px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#mainPageNotFound .notFoundSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#mainPageNotFound .notFoundSection p {
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 22px;
+  text-align: center;
+}
+#mainPageNotFound .notFoundSection .hr-one {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.57), rgb(255, 255, 255), rgba(255, 255, 255, 0.57));
+  width: 800px;
+  margin-top: 0px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+#mainPageNotFound .notFoundSection h1 {
+  font-size: 30px;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+#mainPageNotFound .notFoundSection .goatPet {
+  max-width: 200px;
+}
+#mainPageNotFound .buttonPageNotFound {
+  border-radius: 10px;
+  min-width: 170px;
+  min-height: 40px;
+  font-size: 18px;
+  background-color: black;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+}
+#mainPageNotFound .buttonPageNotFound a {
+  text-decoration: none;
+  color: white;
 }
 
 /*** >> Media Queries << ***/
@@ -441,7 +556,6 @@ main #mid .sectionFlex .sectionButton {
   }
   footer .newsletter .rightNewsletter {
     max-width: 400px;
-    min-width: 380px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -493,21 +607,35 @@ main #mid .sectionFlex .sectionButton {
     height: 200vh;
   }
   #mainBack .mainSP .flags {
-    max-height: 50px;
+    max-height: 60px;
   }
   #mainBack .mainSP .maps {
-    max-width: 40vh;
-    max-height: 45vh;
-    border-radius: 55px;
-    margin-top: 0;
+    width: 340px;
+    height: 400px;
   }
   /** MQ Products  **/
   #mainProducts {
     display: grid;
     grid-template-areas: "keyboardsSection  keyboardsSection  keyboardsSection" "headphonesSection headphonesSection headphonesSection" "webCamerasSection webCamerasSection webCamerasSection" "mousesSection     mousesSection     mousesSection";
   }
+  #mainProducts .productsTittle {
+    font-size: 26px;
+  }
+  #mainProducts .keyboardsSection {
+    height: 33.3vh;
+    width: 100vw;
+  }
   #mainProducts .mousesSection {
     max-height: 33.3vh;
+    width: 100vw;
+  }
+  #mainProducts .headphonesSection {
+    height: 33.3vh;
+    width: 100vw;
+  }
+  #mainProducts .camsSection {
+    height: 33.3vh;
+    width: 100vw;
   }
   /** MQ KeyFamily  **/
   #mainKf {
@@ -560,6 +688,47 @@ main #mid .sectionFlex .sectionButton {
   }
   .mainContact .contactForm .formMessage {
     width: 60vw;
+  }
+  /** MQ Products **/
+  #mainProducts .productsTittle {
+    font-size: 23px;
+    padding-right: 30px;
+    margin-bottom: 0px;
+  }
+  #mainProducts .productsDescription {
+    font-size: 12px;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-bottom: 5px;
+  }
+  #mainProducts .seeProducts {
+    font-size: 13px;
+    padding-right: 30px;
+    margin-bottom: 12px;
+  }
+  /** MQ Footer **/
+  footer .foot section .kgFooter {
+    max-width: 80px;
+    padding-left: 10px;
+  }
+  footer .foot section div p {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  footer .foot section div .termsAndCond {
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: justify;
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 360px) {
+  #mainBack .mainSP .countrySalePoint .flags {
+    max-height: 50px;
+  }
+  #mainBack .mainSP .countrySalePoint .maps {
+    width: 280px;
+    height: 350px;
   }
 }
 
