@@ -3,6 +3,6 @@
 
 *The technologies used for this project were HTML, CSS, SASS, Bootstrap and GPT-4.*
 
-![Captura de pantalla 2024-01-19 182151](https://github.com/santillanagus/keygoats/assets/147940646/4765d5de-f066-4e16-8697-f774ee13304a)
+![Captura de pantalla 2024-01-19 182626](https://github.com/santillanagus/keygoats/assets/147940646/20f72ad5-2f02-4675-89e1-6c3e728b886f)
 
 *The page consists of a home page + 4 sections. These are the Products, KeyFamily, Contact and Sales Points section.*
